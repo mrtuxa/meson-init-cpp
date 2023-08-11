@@ -19,16 +19,17 @@ meson-init-cpp <project_name> <version> <c++ version>
 
 For example:
 
+```bash
 meson-init-cpp foo 0.1 14
-
+```
 
 This will create a new project with the specified name, version, and C++ version.
 
-Contributing
+# Contributing
 Contributions to meson-init-cpp are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
 
-License
-meson-init-cpp is licensed under the MIT License. See the LICENSE file for more information.
+# License
+meson-init-cpp is licensed under the GPL-3.0 License. See the LICENSE file for more information.
 
-Contact
-For any questions or further information, you can reach out to me via email or through the GitHub repository.
+# Contact
+For any questions or further information, you can reach out to me via email (mrtuxa@infra-sys.de) or through a issue.
