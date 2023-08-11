@@ -74,5 +74,19 @@ int main(int argc, char *argv[]) {
            << "clean:" << std::endl
            << "\t@rm -f -R builddir" << std::endl;
 
+  // check if git is installed
+  int checkGit = std::system("git --version");
+
+  if (checkGit != 0) {
+    std::cout << "Pleas install git on your system" << std::endl;
+    exit(1);
+  }
+
+  // git init & and all files
+
+  std::system("git init");
+  std::system("git add Makefile meson.build src/main.cpp");
+  std::system("git commit -m 'init repo'");
+
   return 0;
 }
