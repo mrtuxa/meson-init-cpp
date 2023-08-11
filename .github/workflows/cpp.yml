@@ -2,6 +2,7 @@ name: Install Mesa and Run
 
 
 on:
+ pull_request:
  workflow_dispatch:
  push:
     branches:
