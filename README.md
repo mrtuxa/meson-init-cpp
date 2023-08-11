@@ -32,3 +32,8 @@ meson-init-cpp is licensed under the GPL-3.0 License. See the LICENSE file for m
 
 # Contact
 For any questions or further information, you can reach out to me via email (mrtuxa@infra-sys.de) or through a issue.
+
+# tested OS
+
+- [x] Debian
+- [x] OpenBSD
