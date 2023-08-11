@@ -16,6 +16,14 @@ int main(int argc, char *argv[]) {
       std::cout << "The directory must be empty!" << std::endl;
       exit(1);
     }
+
+    if (std::string(argv[1]) == "test") {
+      std::cout << " ERROR: Target name 'test' is reserved for Meson's "
+                   "internal use. Please rename."
+                << std::endl;
+      exit(1);
+    }
+
     std::ofstream project("meson.build");
 
     // create meson.build file
