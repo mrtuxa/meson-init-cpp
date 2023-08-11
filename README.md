@@ -4,10 +4,9 @@ meson-init-cpp is a project initialization tool for C++ projects using the Meson
 # Installation
 To install meson-init-cpp, follow these steps:
 
-Clone the repository: git clone https://github.com/your-repo/meson-init-cpp.git
-Navigate to the project directory: cd meson-init-cpp
-Build the project: meson build
-Install meson-init-cpp: make
+Clone the repository: `git clone https://github.com/mrtuxa/meson-init-cpp.git`
+Navigate to the project directory: `cd meson-init-cpp`
+Build the project: `bash run`
 
 # Usage
 To use meson-init-cpp, run the following command:
