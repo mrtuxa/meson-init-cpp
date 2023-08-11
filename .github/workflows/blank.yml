@@ -1,7 +1,9 @@
 name: Install Mesa and Run
 
+
 on:
-  push:
+ workflow_dispatch:
+ push:
     branches:
       - main
 
