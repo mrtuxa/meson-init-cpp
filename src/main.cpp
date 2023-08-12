@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
   int checkGit = std::system("git --version");
 
   if (checkGit != 0) {
-    std::cout << "Pleas install git on your system" << std::endl;
+    std::cout << "Please install git on your system" << std::endl;
     exit(1);
   }
 
