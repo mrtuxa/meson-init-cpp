@@ -31,8 +31,9 @@ int main(int argc, char *argv[]) {
             << "\tversion : '" << argv[2] << "',\n"
             << "\tdefault_options : ['warning_level=3',\n"
             << "\t\t\t   'cpp_std=c++" << argv[3] << "'])\n\n"
+            << "thread_dep = dependency('threads')\n\n"
             << "exe = executable('" << argv[1] << "', 'src/main.cpp',\n"
-            << "\tinstall : true)\n\n"
+            << "\tinstall : true, dependencies : thread_dep)\n\n"
             << "test('basic', exe)\n";
 
     // create source dir
