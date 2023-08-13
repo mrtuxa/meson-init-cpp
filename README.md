@@ -8,6 +8,19 @@ Clone the repository: `git clone https://github.com/mrtuxa/meson-init-cpp.git` <
 Navigate to the project directory: `cd meson-init-cpp` <br>
 Build the project: `bash run`
 
+# Arch Linux
+
+with AUR Helper
+```shell
+yay -S meson-init-cpp-git
+```
+
+```shell
+git clone https://aur.archlinux.org/meson-init-cpp-git.git
+cd meson-init-cpp-git/
+makepkg -si
+```
+
 # Usage
 To use meson-init-cpp, run the following command:
 
