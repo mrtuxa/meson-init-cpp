@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/workspaces/meson-init-cpp/builddir",
+    "command": "c++ -Imeson_init_cpp@exe -I. -I.. -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -std=c++17 -g -MD -MQ 'meson_init_cpp@exe/src_main.cpp.o' -MF 'meson_init_cpp@exe/src_main.cpp.o.d' -o 'meson_init_cpp@exe/src_main.cpp.o' -c ../src/main.cpp",
+    "file": "../src/main.cpp",
+    "output": "meson_init_cpp@exe/src_main.cpp.o"
+  }
+]
