@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Mesa
+      - name: Install Meson
         run: sudo apt-get install meson build-essential
 
       - name: Run bash script
