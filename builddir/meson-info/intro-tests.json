@@ -1,1 +1,0 @@
-[{"cmd": ["/workspaces/meson-init-cpp/builddir/meson_init_cpp"], "env": {}, "name": "basic", "workdir": null, "timeout": 30, "suite": ["meson-init-cpp"], "is_parallel": true, "priority": 0, "protocol": "exitcode"}]
