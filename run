@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-rm -f -R builddir/
+rm -f -R builddir/ && 
 
-meson setup builddir
-meson compile -C builddir
+meson setup builddir && cd builddir && ninja && cd .. &&
 
 
 if [ -f "$(which meson-init-cpp)" ]; then

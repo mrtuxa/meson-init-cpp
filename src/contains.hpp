@@ -1,1 +1,1 @@
-auto containsVersion(int version);
+bool containsVersion();

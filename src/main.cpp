@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include "contains.hpp"
 
 int main(int argc, char *argv[]) {
   if (argc < 4) {
@@ -21,6 +22,11 @@ int main(int argc, char *argv[]) {
       std::cout << " ERROR: Target name 'test' is reserved for Meson's "
                    "internal use. Please rename."
                 << std::endl;
+      exit(1);
+    }
+
+    if(!containsVersion) {
+      std::cout << "Does not contain a valid c++ version" << std::endl;
       exit(1);
     }
 
