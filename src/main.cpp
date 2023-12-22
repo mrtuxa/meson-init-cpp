@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
       exit(1);
     }
 
-    if(!containsVersion) {
+    if(!containsVersion(argv[2])) {
       std::cout << "Does not contain a valid c++ version" << std::endl;
       exit(1);
     }
