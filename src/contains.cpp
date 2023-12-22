@@ -1,9 +1,9 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-
-bool containsVersion(int version) {
-  std::vector<int> versions = {98, 03, 11, 14, 17, 20, 23};
+#include <string>
+bool containsVersion(std::string version) {
+  std::vector<std::string> versions = {"98", "03", "11", "14", "17", "20", "23"};
 
   auto it = std::find(versions.begin(), versions.end(), version);
 
@@ -11,5 +11,5 @@ bool containsVersion(int version) {
     return true;
   } else {
     return false;
-  }
+  } 
 }
