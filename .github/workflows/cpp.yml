@@ -19,8 +19,10 @@ jobs:
       - name: Install Meson
         run: sudo apt-get install meson build-essential
 
-      - name: Run bash script
+      - name: compile
         run: make
+      - name: install
+        run: sudo make install
       - name: Test if correct version
         run: mkdir test && cd test && meson-init-cpp foo 0.1 14 && make && ./builddir/foo && cd ../.. && rm -rf test/
       - name: Test if version is incorrect
