@@ -9,3 +9,5 @@ setup:
 
 build:
 	cd builddir && ninja
+install:
+	cp builddir/meson_init_cpp /usr/local/bin/meson-init-cpp
