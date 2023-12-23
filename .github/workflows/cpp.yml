@@ -23,6 +23,8 @@ jobs:
         run: make
       - name: install
         run: sudo make install
+      - name: clean directory
+        run: sudo rm -rf /tmp/test /tmp_incorrect
       - name: Test if correct version
         run: mkdir /tmp/test && cd /tmp/test && meson-init-cpp foo 0.1 14 && make && ./builddir/foo 
       - name: Test if version is incorrect
