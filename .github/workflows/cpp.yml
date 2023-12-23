@@ -24,6 +24,6 @@ jobs:
       - name: install
         run: sudo make install
       - name: Test if correct version
-        run: mkdir test && cd test && meson-init-cpp foo 0.1 14 && make && ./builddir/foo 
+        run: mkdir /tmp/test && cd /tmp/test && meson-init-cpp foo 0.1 14 && make && ./builddir/foo 
       - name: Test if version is incorrect
-        run: cd $(mkdir test_incorrect) && meson-init-cpp foo 0.1 3000 && make && exit 0
+        run: cd $(mkdir /tmp/test_incorrect) && meson-init-cpp foo 0.1 3000 && make && exit 0
