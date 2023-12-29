@@ -26,6 +26,6 @@ jobs:
       - name: clean directory
         run: sudo rm -rf /tmp/test /tmp_incorrect
       - name: Test if correct version
-        run: mkdir /tmp/test && cd /tmp/test && meson-init-cpp foo 0.1 14 && make && ./builddir/foo 
+        run: cd $(mktemp -d) && meson-init-cpp foo 0.1 14 && make && ./builddir/foo 
       - name: Test if version is incorrect
-        run: cd $(mkdir /tmp/test_incorrect) && meson-init-cpp foo 0.1 3000 && make && exit 0
+        run: cd $(mktemp -d)&& meson-init-cpp foo 0.1 3000 && make && exit 0
