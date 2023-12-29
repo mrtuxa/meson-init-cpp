@@ -1,9 +1,9 @@
+#include "contains.hpp"
 #include <cstdlib>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "contains.hpp"
 
 int main(int argc, char *argv[]) {
   if (argc < 4) {
@@ -25,11 +25,10 @@ int main(int argc, char *argv[]) {
       exit(1);
     }
 
-    if(containsVersion(argv[2])) {
+    if (!containsVersion(argv[3])) {
       std::cout << "Does not contain a valid c++ version" << std::endl;
       exit(1);
     }
-
     std::ofstream project("meson.build");
 
     // create meson.build file

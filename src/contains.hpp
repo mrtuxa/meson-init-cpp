@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
+#include <string_view>
 
-
-bool containsVersion(std::string version);
+bool containsVersion(const std::string_view &version);

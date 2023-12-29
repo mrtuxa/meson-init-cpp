@@ -1,15 +1,6 @@
 #include <algorithm>
-#include <iostream>
-#include <vector>
-#include <string>
-bool containsVersion(std::string version) {
-  std::vector<std::string> versions = {"98", "03", "11", "14", "17", "20", "23"};
-
-  auto it = std::find(versions.begin(), versions.end(), version);
-
-  if (it != versions.end()) {
-    return true;
-  } else {
-    return false;
-  } 
+#include <string_view>
+bool containsVersion(const std::string_view &version) {
+  const auto versions = {"98", "03", "11", "14", "17", "20", "23"};
+  return std::find(versions.begin(), versions.end(), version) != versions.end();
 }
